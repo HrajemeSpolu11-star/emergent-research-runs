@@ -379,3 +379,65 @@ provedeno (zůstává v `emergent-agent/ROADMAP.md` jako otevřené):
 - Skutečný A/B multi-agent isolation test ve sdíleném World
 - Export research run artifact do `emergent-research-runs/experiments/`
 - `parent_event_id` populace (viz výše)
+
+---
+
+# DODATEK v1.2.0 (15.8.2026, pozdější) -- Observatory v0.3.1: correlation ID, telemetry režimy, truncation
+
+## Correlation ID
+
+`CognitionEvent` nyní nese `event_id` (`"e:<tick>:<seq>"`) a `decision_id`
+(`"d:<tick>"`) -- oba deterministicky odvozené jen z už-existujících
+hodnot (tick, seq), NIKDY z náhodného zdroje (`uuid4()` by čerpal z
+`os.urandom`, čemuž jsme se záměrně vyhnuli, aby nevznikla ani teoretická
+pochybnost o vlivu na determinismus). Všechny události patřící k jednomu
+kroku (`agent.step()`) sdílejí stejné `decision_id` -- to je diagnostická
+kotva pro rekonstrukci "co všechno patřilo k rozhodnutí v kroku N".
+
+**Nedokončeno, poctivě přiznáno:** pole `parent_event_id` v schématu
+existuje, ale v této etapě NENÍ naplňováno (vždy `null`). Explicitní
+propojení výstup-modulu-A → vstup-modulu-B napříč moduly je samostatný,
+větší návrhový úkol, ne fabrikace prázdného pole.
+
+## Telemetry režimy
+
+`CognitionTelemetryRecorder(level=...)`, čtyři úrovně:
+
+- **OFF** = `telemetry_recorder=None` (beze změny od v0.3 -- nulový overhead, ověřeno)
+- **BASIC** = jen `AgentDecision, World, PredictionError, IntrinsicReward, Bridge` (minimum pro dlouhé běhy)
+- **DEBUG** = všechny moduly včetně `not_active_this_tick` padding
+- **FULL** = totéž jako DEBUG
+
+**Poctivý nález:** DEBUG a FULL v aktuální implementaci produkují
+IDENTICKÝ výstup (ověřeno: 500 kroků, oba 18502 událostí). Odlišení
+úrovní zůstalo jen na úrovni "zahrnout/nezahrnout not_active padding"
+(OFF/BASIC vs DEBUG/FULL), ne na úrovni obsahové hloubky (např. plnější
+`input_summary`/`output_summary` pro FULL). Toto je zaznamenaná mezera
+pro příští iteraci, ne skrytá.
+
+**Změřený reálný overhead** (500 kroků, provider=ensemble, oproti OFF baseline):
+```
+BASIC : +4.9 %   (6.0 událostí/krok,  ~1979 B/krok)
+DEBUG : +17.0 %  (37.0 událostí/krok, ~13175 B/krok)
+FULL  : +19.3 %  (37.0 událostí/krok, ~13175 B/krok)
+```
+
+## Omezení růstu dat (truncation)
+
+`CognitionTelemetryRecorder(max_events=N)` -- při dosažení limitu se
+další `record()` volání tiše NEZAHODÍ bez záznamu: nastaví se
+`recorder.truncated = True` a `recorder.truncation_reason` (např.
+`"max_events=100 reached at tick 2"`). Export musí tato pole zahrnout
+do `manifest.json` (`trace_truncated: true` + důvod), aby žádný
+auditor neinterpretoval neúplnou trace jako úplnou. Ověřeno testem M
+(`test_M_truncation_explicit_not_silent`).
+
+**Nedokončeno:** `max_bytes` limit, chunking a rolling buffer (viz
+zadání bod 10) NEJSOU implementovány -- pouze `max_events` (počet
+událostí). Zaznamenáno jako otevřený bod, ne fabrikováno.
+
+## Noninterference po těchto změnách
+
+Znovu ověřeno (test A + nový test L): telemetrie ON (libovolná úroveň
+BASIC/DEBUG/FULL) vs OFF -- trajektorie identická. `begin_decision()`
+a `not_active()` gating nepřidávají žádný nový zdroj nedeterminismu.
