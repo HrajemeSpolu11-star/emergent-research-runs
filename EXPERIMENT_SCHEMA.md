@@ -227,3 +227,97 @@ Toto je `schema_version: 1.0.0`. Jakákoli změna struktury souborů
 vyžaduje novou verzi zapsanou v `manifest.json` a záznam v tomto
 souboru pod novou sekcí "Historie verzí" (zatím žádná, toto je první
 verze).
+
+---
+
+# DODATEK v1.1.0 (15.8.2026) -- Observatory v0.3: skutečná Python cognition telemetrie
+
+## Nový zdroj dat: `CognitionTelemetryRecorder`
+
+Observatory v0.3 přidává druhý, zcela nezávislý zdroj trace dat vedle v0.2
+(World/Body/Senses/Bridge/Actions/Consequences, generovaných JS portem
+v prohlížeči). Tento nový zdroj je `emergent_agent/telemetry/
+cognition_events.py` -- read-only, opt-in instrumentace **skutečného**
+Python `Agent.step()`, ne JS simulace.
+
+**Klíčový rozdíl oproti v0.2 datům:** toto NENÍ živé spojení prohlížeč↔Python.
+Prohlížeč nemá jak zavolat běžící Python proces. Data se generují dávkově
+skriptem `emergent_agent/experiments/generate_cognition_trace.py`, který
+spustí skutečného agenta a exportuje JSON bundle, který Observatoř
+(záložka MYSL a odvozené panely) načte jako statickou, nahranou trace.
+
+## Formát `CognitionEvent`
+
+```json
+{
+  "seq": "integer, monotónně rostoucí v rámci recorderu",
+  "tick": "integer, world.step v okamžiku události",
+  "source_module": "string, např. 'Perception', 'EpisodicMemory', 'CausalGraph'",
+  "event_type": "string, např. 'encode', 'retrieve', 'not_active_this_tick'",
+  "visibility": "'agent_visible' | 'researcher_only' | 'internal_agent_state'",
+  "input_summary": "dict nebo null -- bezpečně zkrácený souhrn vstupu, NIKDY syrový mutable Python objekt",
+  "output_summary": "dict nebo null -- stejně",
+  "active": "bool -- byl modul v tomto kroku skutečně aktivní",
+  "error": "string nebo null",
+  "wall_time": "float (unix timestamp) nebo null -- POUZE metadata, nikdy čteno zpět agentem, nemá vliv na determinismus trajektorie (viz noninterference testy)"
+}
+```
+
+## Nová klasifikace `visibility` (rozšiřuje `researcher_only`/`agent_visible` z v1.0.0)
+
+Přidána třetí kategorie **`internal_agent_state`**: data, která nejsou
+World Truth (agent k nim nemá privilegovaný přístup odjinud), ale zároveň
+nejsou "percept" v běžném smyslu -- jde o agentův vlastní vnitřní výpočet
+(drives, novelty skóre, arbitrážní skóre, health report). Tato kategorie
+existuje proto, že binární `agent_visible`/`researcher_only` z v1.0.0
+nedostatečně popisovala tento typ dat -- nejsou to World data (takže ne
+`researcher_only` ve smyslu "agent to nikdy neměl"), ale zároveň nejde o
+přímý smyslový vjem (takže "agent_visible" by naznačovalo něco jiného).
+
+## Export soubory (rozšíření `experiment_<id>/` adresáře z v1.0.0)
+
+Pro Python cognition telemetrii, oddělené `*_trace.jsonl` soubory per modul
+(ne jeden centrální soubor) -- viz `CognitionTelemetryRecorder.to_jsonl_by_module()`.
+Aktuálně reálně generované moduly (ověřeno skutečným během, 60 kroků,
+seed 42, provider=ensemble): `Perception, Attention, SensorFusion,
+ChangeDetection, Curiosity, GoalSystem, EpisodicMemory, HypothesisEngine,
+ObjectModel, SubconsciousSystem, SubconsciousGuardian, MetaLearningController,
+AutomaticCurriculum, CognitionProvider, ExperimentalDrive, ActionArbiter,
+Planner, StuckLoopBreaker (podmíněně), AgentDecision, Bridge, World,
+PredictionError, IntrinsicReward, EpisodicMemory(add/decay), WorkingMemory,
+ProceduralMemory, BeliefStore, TransitionModel, CausalGraph, HabitMemory,
+SkillDiscovery, HierarchicalSkillLibrary, SkillConsolidator,
+AutobiographicalMemory, SemanticMemory, OfflineConsolidator, Homeostasis`.
+
+## Nedokázané / chybějící (explicitně, per princip tohoto dokumentu)
+
+- **Žádný modul se nesmí v exportu tvářit jako aktivní, pokud aktivní
+  nebyl.** `event_type: "not_active_this_tick"` je POVINNÝ explicitní
+  zápis pro moduly, které v daném kroku neběžely (podmíněné moduly jako
+  `SemanticMemory`, `CausalGraph`, `Planner` fallback, `OfflineConsolidator`)
+  -- nikdy tichá mezera v datech.
+- Pokud modul NIKDY nebyl aktivní v celé trace (např. `CausalGraph` v
+  demonstrační 60-krokové trace, protože nedošlo k žádné interakci s
+  pozorovaným trackem), Observatoř to zobrazuje jako **DATA NEDOSTUPNÁ**,
+  ne jako prázdný/nulový graf.
+- `SensorFusion`, `ChangeDetection`, `AutomaticCurriculum` se v aktuální
+  implementaci `agent.py` počítají, ale jejich výstup nečte žádný cognition
+  provider -- telemetrie je zaznamenává jako `not_active_this_tick` se
+  zdůvodněním v poznámce, ne jako by ovlivňovaly rozhodování.
+
+## Noninterference garance (nová, klíčová pro tento zdroj dat)
+
+Na rozdíl od v0.2 (JS simulace, žádný "skutečný" agent k narušení),
+Python cognition telemetrie se připojuje k reálnému rozhodovacímu procesu.
+Proto platí a je automaticky testováno (`tests/test_telemetry_noninterference.py`
+v `emergent-agent`):
+
+```
+telemetry_recorder=None  ==  telemetry_recorder=CognitionTelemetryRecorder()
+```
+
+na úrovni celé trajektorie (akce, odměny, prediction error, world state,
+memory counts) při stejném seedu. Měřený reálný overhead (1000 kroků,
+provider=ensemble): **+23.7 % relativní čas**, **~10.4 KB/krok** serializovaná
+velikost (~99 MB projekce pro 10k kroků -- recorder zatím nemá omezení
+velikosti, jde o nevyřešenou škálovací limitaci, ne o chybu).
