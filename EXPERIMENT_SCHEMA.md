@@ -321,3 +321,61 @@ memory counts) při stejném seedu. Měřený reálný overhead (1000 kroků,
 provider=ensemble): **+23.7 % relativní čas**, **~10.4 KB/krok** serializovaná
 velikost (~99 MB projekce pro 10k kroků -- recorder zatím nemá omezení
 velikosti, jde o nevyřešenou škálovací limitaci, ne o chybu).
+
+---
+
+# DODATEK v1.2.0 (15.8.2026) -- Observatory v0.3.1: correlation ID, telemetry režimy, truncation
+
+## Correlation ID (částečně implementováno)
+
+`CognitionEvent` nyní nese `event_id` (`"e:<tick>:<seq>"`, deterministické,
+nekonzumuje RNG) a `decision_id` (`"d:<tick>"`, jeden na krok --
+`Agent.step()` volá `recorder.begin_decision(tick)` na začátku).
+**`parent_event_id` existuje v schématu, ale NENÍ v této fázi
+populován** (vždy `None`) -- explicitní propojení výstup-modulu-A →
+vstup-modulu-B napříč moduly je samostatný, větší návrhový úkol,
+neimplementováno, nefingováno.
+
+## Telemetry režimy (OFF/BASIC/DEBUG/FULL)
+
+`CognitionTelemetryRecorder(level=...)`. OFF = `telemetry_recorder=None`
+(nezměněno, 0% overhead). Změřený reálný overhead (1000 kroků, seed 42,
+provider=ensemble), oproti OFF:
+
+| režim | overhead | events/krok | bytes/krok |
+|-------|----------|-------------|------------|
+| BASIC | +6.7 %   | 6.00        | ~1983      |
+| DEBUG | +18.3 %  | 37.00       | ~13217     |
+| FULL  | +16.9 %  | 37.00       | ~13217     |
+
+**Poctivá poznámka:** DEBUG a FULL v této implementaci produkují
+IDENTICKÝ výstup -- rozdíl je zatím jen deklarovaný, ne funkčně
+odlišený. To je otevřený nedodělek, ne skrytá vlastnost.
+BASIC obsahuje jen `AgentDecision, World, PredictionError,
+IntrinsicReward, Bridge` -- minimum pro rekonstrukci vnějšího tvaru
+rozhodnutí u dlouhých běhů.
+
+Noninterference ověřena pro všechny úrovně (`test_L_telemetry_levels...`)
+-- identická trajektorie jako OFF u všech tří.
+
+## Truncation (`max_events`)
+
+`CognitionTelemetryRecorder(max_events=N)`. Po dosažení limitu se další
+události EXPLICITNĚ zahazují (ne tiše) a `recorder.truncated=True` +
+`recorder.truncation_reason` popisuje kdy/proč. Export musí toto pole
+zahrnout do `manifest.json` (`trace_truncated: bool`) -- schema pole
+existuje, export skript (`generate_cognition_trace.py`) zatím
+`truncated`/`truncation_reason` do manifestu nekopíruje (otevřený
+nedodělek, zapsáno do ROADMAP).
+
+## Explicitně NEIMPLEMENTOVÁNO v této dílčí fázi (v0.3.1, tato aktualizace)
+
+Kvůli velmi omezenému rozpočtu této konkrétní iterace NEBYLO v tomto kroku
+provedeno (zůstává v `emergent-agent/ROADMAP.md` jako otevřené):
+- Interaktivní klikací TOK INFORMACÍ graf (uzly/hrany s klikatelnými detaily)
+- Panel ROZHODNUTÍ (český souhrn jednoho tick/akce)
+- Diagnostický experiment cíleně aktivující CausalGraph
+- CALCULATED/CONSUMED/IGNORED/NOT ACTIVE jemnější klasifikace (aktuálně jen aktivní/not_active_this_tick)
+- Skutečný A/B multi-agent isolation test ve sdíleném World
+- Export research run artifact do `emergent-research-runs/experiments/`
+- `parent_event_id` populace (viz výše)
