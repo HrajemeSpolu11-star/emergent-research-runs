@@ -441,3 +441,49 @@ událostí). Zaznamenáno jako otevřený bod, ne fabrikováno.
 Znovu ověřeno (test A + nový test L): telemetrie ON (libovolná úroveň
 BASIC/DEBUG/FULL) vs OFF -- trajektorie identická. `begin_decision()`
 a `not_active()` gating nepřidávají žádný nový zdroj nedeterminismu.
+
+---
+
+# DODATEK v1.2.1 (15.8.2026, checkpoint 2) -- PRIORITY 0 fixes + GATE 6 partial
+
+## PRIORITY 0-A vyřešeno: reprodukovatelný benchmark protokol
+
+`emergent_agent/telemetry/benchmark.py` -- fixní protokol (seed=42, provider=ensemble,
+500 kroků, 50 kroků warm-up, 5 opakování/úroveň), reportuje medián + min/max, events/step,
+bytes/step, Python/platform metadata. Dřívější dvě různá čísla (1000 vs 500 kroků z různých
+zpráv) NEbyla "správná"/"špatná" -- byla to jednorázová měření bez sdíleného protokolu.
+Výsledky se od teď VŽDY uvádí jako "měření pod tímto protokolem", ne jako univerzální
+vlastnost systému.
+
+Aktuální měření pod tímto protokolem (medián z 5 běhů):
+```
+OFF:    baseline (0.0 %)
+BASIC:  +3.7 %   (6.0 událostí/krok,  1979 B/krok)
+DEBUG:  +13.9 %  (37.0 událostí/krok, 13175 B/krok)
+FULL:   +12.4 %  (37.0 událostí/krok, 13175 B/krok)
+```
+
+## PRIORITY 0-B vyřešeno: truncation manifest
+
+`generate_cognition_trace.run_and_export()` nyní exportuje `trace_truncated` +
+`trace_truncation_reason` do manifestu (dřív chybělo úplně). Ověřeno testem N: kompletní
+běh → `false`/`null`; useknutý běh → `true` + konkrétní důvod; naivní loader kontrolující
+jen `trace_truncated` správně odmítne useknutý artefakt jako neúplný.
+
+## GATE 6 částečně vyřešeno: DEBUG už není bit-identické s FULL
+
+`_safe_summary()` nyní bere `max_items` parametr (DEBUG=8, FULL=32) -- FULL odhaluje více
+z JIŽ existujícího `output_summary`/`input_summary` pole, nikdy nový typ pole. Ověřeno:
+`DEBUG == FULL identical content: False` (dřív `True`). Poctivě přiznáno: rozdíl ve
+skutečné velikosti je v aktuálním běhu malý (~0.005 %), protože většina polí v této
+architektuře nemá hluboce vnořené listy/dicty nad 8 prvků -- mechanismus je reálný a
+funkční, ale jeho praktický dopad na TUTO konkrétní architekturu je zatím malý.
+
+## Co v tomto checkpointu STÁLE NENÍ řešeno (gates 1-5, 7-10 ze zadání)
+
+parent_event_id (skutečná datová závislost, ne pořadí), CALCULATED/CONSUMED/IGNORED/
+NOT_ACTIVE klasifikace, diagnostický experiment s reálnou CausalGraph aktivací, panel
+ROZHODNUTÍ, interaktivní graf TOK INFORMACÍ s hranami, rozšířený epistemic leak audit
+(beliefs/semantic memory/causal graph/skills/hypotheses/exportované artefakty), skutečný
+multi-agent A/B shared-world test, bounded recorder nad rámec `max_events` (max_bytes/
+chunking/rolling buffer), první skutečný research artifact. Zaznamenáno jako DALŠÍ GATE.
