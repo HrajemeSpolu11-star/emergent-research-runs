@@ -1,0 +1,12 @@
+{"tick": 0, "intervention": "none", "action_kind": "move"}
+{"tick": 1, "intervention": "none", "action_kind": "move"}
+{"tick": 2, "intervention": "none", "action_kind": "move"}
+{"tick": 3, "intervention": "none", "action_kind": "move"}
+{"tick": 4, "intervention": "none", "action_kind": "move"}
+{"tick": 5, "intervention": "none", "action_kind": "move"}
+{"tick": 6, "intervention": "none", "action_kind": "move"}
+{"tick": 7, "intervention": "none", "action_kind": "move"}
+{"tick": 8, "intervention": "none", "action_kind": "move"}
+{"tick": 9, "intervention": "none", "action_kind": "move"}
+{"tick": 10, "intervention": "researcher_diagnostic_forced_selection", "action_kind": "move", "action_target": null}
+{"tick": 11, "intervention": "researcher_diagnostic_forced_selection", "action_kind": "interact", "action_target": "track_9"}

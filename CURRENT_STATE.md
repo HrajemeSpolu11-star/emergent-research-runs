@@ -37,3 +37,26 @@ tohoto archivního repozitáře, ne stav nástroje, který do něj zapisuje.
 truncation) -- viz ten soubor pro detaily. Žádný nový experiment nebyl do tohoto repozitáře
 nahrán (stejné jako v předchozím zápisu). `AUDIT_PROTOCOL.md` nebyl měněn -- auditní postup
 se v této etapě nezměnil, jen datové schéma, které audit zkoumá.
+
+---
+
+## Aktualizace 16.8.2026 -- GATE 10 (v0.3.1): první skutečný research artifact
+
+`experiments/run-gate10-first-artifact/` -- první skutečný exportovaný experiment,
+ne demo/placeholder. Obsahuje:
+- `manifest.json` -- run_id, agent_id, přesné SHA commitu `emergent-agent`
+  (`1067ed9b33037c82f0506f4b9aa33445d5cbc11a`), schema/protokol verze, seed,
+  provider, telemetry level, start/end tick, `intervention_summary`
+- `raw_trace_chunk_000.jsonl` -- syrová FULL-úrovňová telemetrická trace (445 událostí)
+- `intervention_log.jsonl` -- per-tik rozlišení přirozené/výzkumnický zásah
+- `README.md` -- český audit summary
+
+**Kritické, explicitně zaznamenané:** posledních 2 ze 12 kroků tohoto běhu byly
+`researcher_diagnostic_forced_selection` (viz `manifest.json` ->
+`intervention_summary`) -- arbitráž byla programově přepsána, aby vybrala už
+reálně navrženého kandidáta na `interact`, protože přirozená arbitráž tuto akci
+v tomto scénáři nikdy nezvolila. Tyto kroky NEJSOU autonomní rozhodnutí agenta.
+
+Checksums všech souborů nezávisle ověřeny (viz `emergent-agent/tests/test_gate10_research_artifact.py`).
+
+Toto uzavírá GATE 10 z etapy Observatory v0.3.1 v `emergent-agent`.
