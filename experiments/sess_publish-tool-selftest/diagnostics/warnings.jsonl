@@ -1,0 +1,9 @@
+{"event_id": "run:publish-selftest:agent:publish-selftest:e:1:49", "tick": 1, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:publish-selftest:agent:publish-selftest:e:2:86", "tick": 2, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:publish-selftest:agent:publish-selftest:e:3:123", "tick": 3, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:publish-selftest:agent:publish-selftest:e:4:160", "tick": 4, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:publish-selftest:agent:publish-selftest:e:5:197", "tick": 5, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:publish-selftest:agent:publish-selftest:e:6:234", "tick": 6, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:publish-selftest:agent:publish-selftest:e:7:271", "tick": 7, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:publish-selftest:agent:publish-selftest:e:8:308", "tick": 8, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:publish-selftest:agent:publish-selftest:e:9:345", "tick": 9, "warnings": ["confidence_miscalibrated"]}
