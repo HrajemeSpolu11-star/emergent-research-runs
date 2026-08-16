@@ -60,3 +60,26 @@ v tomto scénáři nikdy nezvolila. Tyto kroky NEJSOU autonomní rozhodnutí age
 Checksums všech souborů nezávisle ověřeny (viz `emergent-agent/tests/test_gate10_research_artifact.py`).
 
 Toto uzavírá GATE 10 z etapy Observatory v0.3.1 v `emergent-agent`.
+
+---
+
+## Aktualizace 16.8.2026 (oprava) -- GATE 10 provenance bug opraven
+
+Předchozí verze `experiments/run-gate10-first-artifact/` deklarovala
+`agent_commit_sha=1067ed9...`, ale byla ve skutečnosti vygenerována kódem
+(generátor + intervention_log propojení + testy), který v tu chvíli existoval
+jen jako necommitnutá změna, později commitnutá jako `1870d9c`. Nalezeno
+vlastníkem při review.
+
+**Oprava:** `emergent-agent` teď má strukturální ochranu
+(`generate_research_artifact.build_artifact(require_clean_tree=True)`, výchozí),
+která **odmítne** vygenerovat artifact, pokud je pracovní strom špinavý --
+`git rev-parse HEAD` sám o sobě tento nesoulad nikdy nezachytí, protože vrátí
+poslední commit bez ohledu na necommitnuté změny. Přidán regresní test
+(`test_gate10_manifest_sha_matches_actual_head`), který přímo ověřuje
+`manifest.agent_commit_sha == git rev-parse HEAD` v okamžiku generování.
+
+**Artifact zde přepsán** nově vygenerovanou verzí z čistého HEAD
+`emergent-agent` commit `25568fa63b1fd928622774941fe3b1422b7225f5`
+(`git_tree_clean_at_generation: true` v manifestu). Všechny checksums
+(chunk SHA-256, intervention_log SHA-256) nezávisle přepočítány a shodují se.
