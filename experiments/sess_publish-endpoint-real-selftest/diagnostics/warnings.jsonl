@@ -1,0 +1,7 @@
+{"event_id": "run:endpoint-selftest:agent:endpoint-selftest:e:1:49", "tick": 1, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:endpoint-selftest:agent:endpoint-selftest:e:2:86", "tick": 2, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:endpoint-selftest:agent:endpoint-selftest:e:3:123", "tick": 3, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:endpoint-selftest:agent:endpoint-selftest:e:4:160", "tick": 4, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:endpoint-selftest:agent:endpoint-selftest:e:5:197", "tick": 5, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:endpoint-selftest:agent:endpoint-selftest:e:6:234", "tick": 6, "warnings": ["confidence_miscalibrated"]}
+{"event_id": "run:endpoint-selftest:agent:endpoint-selftest:e:7:271", "tick": 7, "warnings": ["confidence_miscalibrated"]}

@@ -1,0 +1,1 @@
+{"not_implemented": true, "reason": "Bridge telemetrie zachycuje jen v\u00fdsledek resolve() vol\u00e1n\u00ed (bridge/target_resolution.jsonl), ne samostatn\u00fd 'po\u017eadavek p\u0159ed resolve' event. Pr\u00e1zdn\u00fd soubor, ne fabrikovan\u00fd obsah."}

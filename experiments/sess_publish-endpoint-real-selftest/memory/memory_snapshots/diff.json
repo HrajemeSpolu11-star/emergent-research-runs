@@ -1,0 +1,367 @@
+{
+  "episodic": {
+    "new_records": {
+      "e:6": {
+        "mid": "e:6",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07502857142857129,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 6,
+        "strength": 1.0,
+        "utility": 0.125028571428572,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:0": {
+        "mid": "e:0",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.10360000000000015,
+          "prediction_error": 0.04999999999999716,
+          "success": true
+        },
+        "created_at": 0,
+        "strength": 1.0,
+        "utility": 0.1535999999999973,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:4": {
+        "mid": "e:4",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.0769333333333332,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 4,
+        "strength": 1.0,
+        "utility": 0.1269333333333339,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:5": {
+        "mid": "e:5",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07582222222222208,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 5,
+        "strength": 1.0,
+        "utility": 0.12582222222222278,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:1": {
+        "mid": "e:1",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.06788571428571442,
+          "prediction_error": 0.04999999999999716,
+          "success": true
+        },
+        "created_at": 1,
+        "strength": 1.0,
+        "utility": 0.11788571428571158,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:3": {
+        "mid": "e:3",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07859999999999986,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 3,
+        "strength": 1.0,
+        "utility": 0.12860000000000057,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:2": {
+        "mid": "e:2",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.06359999999999986,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 2,
+        "strength": 1.0,
+        "utility": 0.11360000000000058,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:7": {
+        "mid": "e:7",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.0744333333333332,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 7,
+        "strength": 1.0,
+        "utility": 0.12443333333333391,
+        "tags": [
+          "interoception"
+        ]
+      }
+    },
+    "removed_records": {},
+    "changed_records": {},
+    "count_before": 0,
+    "count_after": 8
+  },
+  "semantic_facts": {
+    "added": {},
+    "removed": {},
+    "changed": {},
+    "count_before": 0,
+    "count_after": 0
+  },
+  "beliefs": {
+    "added": {},
+    "removed": {},
+    "changed": {},
+    "count_before": 0,
+    "count_after": 0
+  },
+  "causal_edges": {
+    "added": {},
+    "removed": {},
+    "changed": {},
+    "count_before": 0,
+    "count_after": 0
+  },
+  "procedural_skills": {
+    "added": {
+      "move": 0.03079515873015871
+    },
+    "removed": {},
+    "changed": {},
+    "count_before": 0,
+    "count_after": 1
+  },
+  "habits": {
+    "added": {},
+    "removed": {},
+    "changed": {
+      "q": {
+        "before": {},
+        "after": {
+          "((('energy', 65.0), ('hydration', 65.0), ('integrity', 100.0)), (('?', 1), ('?', 1), ('?', 2), ('?', 2), ('?', 3), ('?', 3)), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+            "move:1:0": 0.015540000000000023
+          },
+          "((('energy', 64.6), ('hydration', 64.8), ('integrity', 100.0)), (('?', 2), ('?', 2), ('?', 3), ('?', 3)), (), ())": {
+            "move:1:0": 0.010182857142857164
+          },
+          "((('energy', 64.2), ('hydration', 64.6), ('integrity', 100.0)), (('?', 3), ('?', 3)), (), ())": {
+            "move:1:0": 0.009539999999999979
+          },
+          "((('energy', 63.9), ('hydration', 64.4), ('integrity', 100.0)), (), (), ())": {
+            "move:1:0": 0.01178999999999998
+          },
+          "((('energy', 63.5), ('hydration', 64.2), ('integrity', 100.0)), (), (), ())": {
+            "move:1:0": 0.011539999999999979
+          },
+          "((('energy', 63.1), ('hydration', 64.0), ('integrity', 100.0)), (), (), ())": {
+            "move:1:0": 0.011373333333333312
+          },
+          "((('energy', 62.7), ('hydration', 63.8), ('integrity', 100.0)), (), (), ())": {
+            "move:1:0": 0.011254285714285694
+          },
+          "((('energy', 62.3), ('hydration', 63.6), ('integrity', 100.0)), (), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+            "move:1:0": 0.011164999999999979
+          }
+        },
+        "delta": {
+          "((('energy', 65.0), ('hydration', 65.0), ('integrity', 100.0)), (('?', 1), ('?', 1), ('?', 2), ('?', 2), ('?', 3), ('?', 3)), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+            "before": null,
+            "after": {
+              "move:1:0": 0.015540000000000023
+            }
+          },
+          "((('energy', 63.5), ('hydration', 64.2), ('integrity', 100.0)), (), (), ())": {
+            "before": null,
+            "after": {
+              "move:1:0": 0.011539999999999979
+            }
+          },
+          "((('energy', 63.9), ('hydration', 64.4), ('integrity', 100.0)), (), (), ())": {
+            "before": null,
+            "after": {
+              "move:1:0": 0.01178999999999998
+            }
+          },
+          "((('energy', 62.3), ('hydration', 63.6), ('integrity', 100.0)), (), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+            "before": null,
+            "after": {
+              "move:1:0": 0.011164999999999979
+            }
+          },
+          "((('energy', 62.7), ('hydration', 63.8), ('integrity', 100.0)), (), (), ())": {
+            "before": null,
+            "after": {
+              "move:1:0": 0.011254285714285694
+            }
+          },
+          "((('energy', 64.2), ('hydration', 64.6), ('integrity', 100.0)), (('?', 3), ('?', 3)), (), ())": {
+            "before": null,
+            "after": {
+              "move:1:0": 0.009539999999999979
+            }
+          },
+          "((('energy', 64.6), ('hydration', 64.8), ('integrity', 100.0)), (('?', 2), ('?', 2), ('?', 3), ('?', 3)), (), ())": {
+            "before": null,
+            "after": {
+              "move:1:0": 0.010182857142857164
+            }
+          },
+          "((('energy', 63.1), ('hydration', 64.0), ('integrity', 100.0)), (), (), ())": {
+            "before": null,
+            "after": {
+              "move:1:0": 0.011373333333333312
+            }
+          }
+        }
+      },
+      "n": {
+        "before": {},
+        "after": {
+          "((('energy', 65.0), ('hydration', 65.0), ('integrity', 100.0)), (('?', 1), ('?', 1), ('?', 2), ('?', 2), ('?', 3), ('?', 3)), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+            "move:1:0": 1
+          },
+          "((('energy', 64.6), ('hydration', 64.8), ('integrity', 100.0)), (('?', 2), ('?', 2), ('?', 3), ('?', 3)), (), ())": {
+            "move:1:0": 1
+          },
+          "((('energy', 64.2), ('hydration', 64.6), ('integrity', 100.0)), (('?', 3), ('?', 3)), (), ())": {
+            "move:1:0": 1
+          },
+          "((('energy', 63.9), ('hydration', 64.4), ('integrity', 100.0)), (), (), ())": {
+            "move:1:0": 1
+          },
+          "((('energy', 63.5), ('hydration', 64.2), ('integrity', 100.0)), (), (), ())": {
+            "move:1:0": 1
+          },
+          "((('energy', 63.1), ('hydration', 64.0), ('integrity', 100.0)), (), (), ())": {
+            "move:1:0": 1
+          },
+          "((('energy', 62.7), ('hydration', 63.8), ('integrity', 100.0)), (), (), ())": {
+            "move:1:0": 1
+          },
+          "((('energy', 62.3), ('hydration', 63.6), ('integrity', 100.0)), (), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+            "move:1:0": 1
+          }
+        },
+        "delta": {
+          "((('energy', 65.0), ('hydration', 65.0), ('integrity', 100.0)), (('?', 1), ('?', 1), ('?', 2), ('?', 2), ('?', 3), ('?', 3)), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+            "before": null,
+            "after": {
+              "move:1:0": 1
+            }
+          },
+          "((('energy', 63.5), ('hydration', 64.2), ('integrity', 100.0)), (), (), ())": {
+            "before": null,
+            "after": {
+              "move:1:0": 1
+            }
+          },
+          "((('energy', 63.9), ('hydration', 64.4), ('integrity', 100.0)), (), (), ())": {
+            "before": null,
+            "after": {
+              "move:1:0": 1
+            }
+          },
+          "((('energy', 62.3), ('hydration', 63.6), ('integrity', 100.0)), (), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+            "before": null,
+            "after": {
+              "move:1:0": 1
+            }
+          },
+          "((('energy', 62.7), ('hydration', 63.8), ('integrity', 100.0)), (), (), ())": {
+            "before": null,
+            "after": {
+              "move:1:0": 1
+            }
+          },
+          "((('energy', 64.2), ('hydration', 64.6), ('integrity', 100.0)), (('?', 3), ('?', 3)), (), ())": {
+            "before": null,
+            "after": {
+              "move:1:0": 1
+            }
+          },
+          "((('energy', 64.6), ('hydration', 64.8), ('integrity', 100.0)), (('?', 2), ('?', 2), ('?', 3), ('?', 3)), (), ())": {
+            "before": null,
+            "after": {
+              "move:1:0": 1
+            }
+          },
+          "((('energy', 63.1), ('hydration', 64.0), ('integrity', 100.0)), (), (), ())": {
+            "before": null,
+            "after": {
+              "move:1:0": 1
+            }
+          }
+        }
+      }
+    },
+    "count_before": 2,
+    "count_after": 2
+  },
+  "hierarchical_skill_macros": {
+    "added": {},
+    "removed": {},
+    "changed": {},
+    "count_before": 0,
+    "count_after": 0
+  },
+  "object_model": {
+    "added": {},
+    "removed": {},
+    "changed": {},
+    "count_before": 0,
+    "count_after": 0
+  }
+}
