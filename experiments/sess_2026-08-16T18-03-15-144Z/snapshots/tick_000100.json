@@ -1,0 +1,2525 @@
+{
+  "tick": 100,
+  "trigger": "periodic",
+  "wall_time": 1786903404.0402434,
+  "memory": {
+    "episodic": {
+      "e:0": {
+        "mid": "e:0",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.10360000000000015,
+          "prediction_error": 0.04999999999999716,
+          "success": true
+        },
+        "created_at": 0,
+        "strength": 1.0,
+        "utility": 0.1535999999999973,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:1": {
+        "mid": "e:1",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.06788571428571442,
+          "prediction_error": 0.04999999999999716,
+          "success": true
+        },
+        "created_at": 1,
+        "strength": 1.0,
+        "utility": 0.11788571428571158,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:2": {
+        "mid": "e:2",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.06359999999999986,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 2,
+        "strength": 1.0,
+        "utility": 0.11360000000000058,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:3": {
+        "mid": "e:3",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07859999999999986,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 3,
+        "strength": 1.0,
+        "utility": 0.12860000000000057,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:4": {
+        "mid": "e:4",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.0769333333333332,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 4,
+        "strength": 1.0,
+        "utility": 0.1269333333333339,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:5": {
+        "mid": "e:5",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07582222222222208,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 5,
+        "strength": 1.0,
+        "utility": 0.12582222222222278,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:6": {
+        "mid": "e:6",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07502857142857129,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 6,
+        "strength": 1.0,
+        "utility": 0.125028571428572,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:7": {
+        "mid": "e:7",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.0744333333333332,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 7,
+        "strength": 1.0,
+        "utility": 0.12443333333333391,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:8": {
+        "mid": "e:8",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07397037037037023,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 8,
+        "strength": 1.0,
+        "utility": 0.12397037037037094,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:9": {
+        "mid": "e:9",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07359999999999986,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 9,
+        "strength": 1.0,
+        "utility": 0.12360000000000057,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:10": {
+        "mid": "e:10",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.1927030303030304,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 10,
+        "strength": 1.0,
+        "utility": 0.1927030303030304,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:11": {
+        "mid": "e:11",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07304444444444431,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 11,
+        "strength": 1.0,
+        "utility": 0.12304444444444503,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:12": {
+        "mid": "e:12",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19316923076923084,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 12,
+        "strength": 1.0,
+        "utility": 0.19316923076923084,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:13": {
+        "mid": "e:13",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07264761904761892,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 13,
+        "strength": 1.0,
+        "utility": 0.12264761904761963,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:14": {
+        "mid": "e:14",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.1935111111111112,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 14,
+        "strength": 1.0,
+        "utility": 0.1935111111111112,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:15": {
+        "mid": "e:15",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07234999999999986,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 15,
+        "strength": 1.0,
+        "utility": 0.12235000000000057,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:16": {
+        "mid": "e:16",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19377254901960794,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 16,
+        "strength": 1.0,
+        "utility": 0.19377254901960794,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:17": {
+        "mid": "e:17",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07211851851851837,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 17,
+        "strength": 1.0,
+        "utility": 0.12211851851851908,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:18": {
+        "mid": "e:18",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.18608421052631585,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 18,
+        "strength": 1.0,
+        "utility": 0.18608421052631585,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:19": {
+        "mid": "e:19",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.06734999999999985,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 19,
+        "strength": 1.0,
+        "utility": 0.11735000000000056,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:20": {
+        "mid": "e:20",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.20287619047619057,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 20,
+        "strength": 1.0,
+        "utility": 0.20287619047619057,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:21": {
+        "mid": "e:21",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.06098636363636349,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 21,
+        "strength": 1.0,
+        "utility": 0.1109863636363642,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:22": {
+        "mid": "e:22",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.20631304347826096,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 22,
+        "strength": 1.0,
+        "utility": 0.20631304347826096,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:23": {
+        "mid": "e:23",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.058808333333333185,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 23,
+        "strength": 1.0,
+        "utility": 0.1088083333333339,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:24": {
+        "mid": "e:24",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.20782857142857153,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 24,
+        "strength": 1.0,
+        "utility": 0.20782857142857153,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:25": {
+        "mid": "e:25",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.05768653846153832,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 25,
+        "strength": 1.0,
+        "utility": 0.10768653846153903,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:26": {
+        "mid": "e:26",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.20869629629629638,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 26,
+        "strength": 1.0,
+        "utility": 0.20869629629629638,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:27": {
+        "mid": "e:27",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.056992857142857,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 27,
+        "strength": 1.0,
+        "utility": 0.10699285714285771,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:28": {
+        "mid": "e:28",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.1945839080459771,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 28,
+        "strength": 1.0,
+        "utility": 0.1945839080459771,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:29": {
+        "mid": "e:29",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07137777777777762,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 29,
+        "strength": 1.0,
+        "utility": 0.12137777777777833,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:30": {
+        "mid": "e:30",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19465806451612913,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 30,
+        "strength": 1.0,
+        "utility": 0.19465806451612913,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:31": {
+        "mid": "e:31",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19469166666666676,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 31,
+        "strength": 1.0,
+        "utility": 0.19469166666666676,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:32": {
+        "mid": "e:32",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07127676767676754,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 32,
+        "strength": 1.0,
+        "utility": 0.12127676767676825,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:33": {
+        "mid": "e:33",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19475294117647068,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 33,
+        "strength": 1.0,
+        "utility": 0.19475294117647068,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:34": {
+        "mid": "e:34",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07121904761904747,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 34,
+        "strength": 1.0,
+        "utility": 0.12121904761904818,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:35": {
+        "mid": "e:35",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.18670555555555562,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 35,
+        "strength": 1.0,
+        "utility": 0.18670555555555562,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:36": {
+        "mid": "e:36",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.06677567567567554,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 36,
+        "strength": 1.0,
+        "utility": 0.11677567567567625,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:37": {
+        "mid": "e:37",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.20340877192982465,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 37,
+        "strength": 1.0,
+        "utility": 0.20340877192982465,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:38": {
+        "mid": "e:38",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.060491025641025487,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 38,
+        "strength": 1.0,
+        "utility": 0.1104910256410262,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:39": {
+        "mid": "e:39",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.2067750000000001,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 39,
+        "strength": 1.0,
+        "utility": 0.2067750000000001,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:40": {
+        "mid": "e:40",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.0583764227642275,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 40,
+        "strength": 1.0,
+        "utility": 0.10837642276422821,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:41": {
+        "mid": "e:41",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19493968253968263,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 41,
+        "strength": 1.0,
+        "utility": 0.19493968253968263,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:42": {
+        "mid": "e:42",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07104186046511614,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 42,
+        "strength": 1.0,
+        "utility": 0.12104186046511685,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:43": {
+        "mid": "e:43",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19497575757575766,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 43,
+        "strength": 1.0,
+        "utility": 0.19497575757575766,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:44": {
+        "mid": "e:44",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07100740740740726,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 44,
+        "strength": 1.0,
+        "utility": 0.12100740740740797,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:45": {
+        "mid": "e:45",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.195008695652174,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 45,
+        "strength": 1.0,
+        "utility": 0.195008695652174,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:46": {
+        "mid": "e:46",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07097588652482256,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 46,
+        "strength": 1.0,
+        "utility": 0.12097588652482327,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:47": {
+        "mid": "e:47",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19503888888888898,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 47,
+        "strength": 1.0,
+        "utility": 0.19503888888888898,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:48": {
+        "mid": "e:48",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07094693877551006,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 48,
+        "strength": 1.0,
+        "utility": 0.12094693877551077,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:49": {
+        "mid": "e:49",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19506666666666675,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 49,
+        "strength": 1.0,
+        "utility": 0.19506666666666675,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:50": {
+        "mid": "e:50",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07092026143790835,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 50,
+        "strength": 1.0,
+        "utility": 0.12092026143790906,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:51": {
+        "mid": "e:51",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.1950923076923078,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 51,
+        "strength": 1.0,
+        "utility": 0.1950923076923078,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:52": {
+        "mid": "e:52",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.0708955974842766,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 52,
+        "strength": 1.0,
+        "utility": 0.1208955974842773,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:53": {
+        "mid": "e:53",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19511604938271615,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 53,
+        "strength": 1.0,
+        "utility": 0.19511604938271615,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:54": {
+        "mid": "e:54",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07087272727272713,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 54,
+        "strength": 1.0,
+        "utility": 0.12087272727272784,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:55": {
+        "mid": "e:55",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19513809523809533,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 55,
+        "strength": 1.0,
+        "utility": 0.19513809523809533,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:56": {
+        "mid": "e:56",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07085146198830396,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 56,
+        "strength": 1.0,
+        "utility": 0.12085146198830467,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:57": {
+        "mid": "e:57",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19515862068965525,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 57,
+        "strength": 1.0,
+        "utility": 0.19515862068965525,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:58": {
+        "mid": "e:58",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07083163841807895,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 58,
+        "strength": 1.0,
+        "utility": 0.12083163841807966,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:59": {
+        "mid": "e:59",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.18698333333333342,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 59,
+        "strength": 1.0,
+        "utility": 0.18698333333333342,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:60": {
+        "mid": "e:60",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.06650983606557362,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 60,
+        "strength": 1.0,
+        "utility": 0.11650983606557433,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:61": {
+        "mid": "e:61",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.20366344086021515,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 61,
+        "strength": 1.0,
+        "utility": 0.20366344086021515,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:62": {
+        "mid": "e:62",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.06024682539682524,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 62,
+        "strength": 1.0,
+        "utility": 0.11024682539682595,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:63": {
+        "mid": "e:63",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.20700937500000008,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 63,
+        "strength": 1.0,
+        "utility": 0.20700937500000008,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:64": {
+        "mid": "e:64",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.058151282051281894,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 64,
+        "strength": 1.0,
+        "utility": 0.1081512820512826,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:65": {
+        "mid": "e:65",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19522828282828292,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 65,
+        "strength": 1.0,
+        "utility": 0.19522828282828292,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:66": {
+        "mid": "e:66",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07076417910447746,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 66,
+        "strength": 1.0,
+        "utility": 0.12076417910447818,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:67": {
+        "mid": "e:67",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19524313725490205,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 67,
+        "strength": 1.0,
+        "utility": 0.19524313725490205,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:68": {
+        "mid": "e:68",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07074975845410614,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 68,
+        "strength": 1.0,
+        "utility": 0.12074975845410685,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:69": {
+        "mid": "e:69",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19525714285714296,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 69,
+        "strength": 1.0,
+        "utility": 0.19525714285714296,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:70": {
+        "mid": "e:70",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07073615023474164,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 70,
+        "strength": 1.0,
+        "utility": 0.12073615023474235,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:71": {
+        "mid": "e:71",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.19527037037037046,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 71,
+        "strength": 1.0,
+        "utility": 0.19527037037037046,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:72": {
+        "mid": "e:72",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "blocked",
+          "reward": -0.1952767123287672,
+          "prediction_error": 0.0,
+          "success": false
+        },
+        "created_at": 72,
+        "strength": 1.0,
+        "utility": 0.1952767123287672,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:73": {
+        "mid": "e:73",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07071711711711698,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 73,
+        "strength": 1.0,
+        "utility": 0.12071711711711769,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:74": {
+        "mid": "e:74",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07071111111111096,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 74,
+        "strength": 1.0,
+        "utility": 0.12071111111111167,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:75": {
+        "mid": "e:75",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07070526315789459,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 75,
+        "strength": 1.0,
+        "utility": 0.1207052631578953,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:76": {
+        "mid": "e:76",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07069956709956696,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 76,
+        "strength": 1.0,
+        "utility": 0.12069956709956767,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:77": {
+        "mid": "e:77",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07892051282051268,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 77,
+        "strength": 1.0,
+        "utility": 0.1289205128205134,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:78": {
+        "mid": "e:78",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.06641645569620239,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 78,
+        "strength": 1.0,
+        "utility": 0.1164164556962031,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:79": {
+        "mid": "e:79",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.062245833333333195,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 79,
+        "strength": 1.0,
+        "utility": 0.1122458333333339,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:80": {
+        "mid": "e:80",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.0601586419753085,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 80,
+        "strength": 1.0,
+        "utility": 0.11015864197530921,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:81": {
+        "mid": "e:81",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.05890487804878035,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 81,
+        "strength": 1.0,
+        "utility": 0.10890487804878106,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:82": {
+        "mid": "e:82",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07066827309236934,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 82,
+        "strength": 1.0,
+        "utility": 0.12066827309237005,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:83": {
+        "mid": "e:83",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07066349206349191,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 83,
+        "strength": 1.0,
+        "utility": 0.12066349206349263,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:84": {
+        "mid": "e:84",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07065882352941162,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 84,
+        "strength": 1.0,
+        "utility": 0.12065882352941233,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:85": {
+        "mid": "e:85",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07065426356589133,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 85,
+        "strength": 1.0,
+        "utility": 0.12065426356589204,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:86": {
+        "mid": "e:86",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07064980842911862,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 86,
+        "strength": 1.0,
+        "utility": 0.12064980842911933,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:87": {
+        "mid": "e:87",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.0706454545454544,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 87,
+        "strength": 1.0,
+        "utility": 0.12064545454545511,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:88": {
+        "mid": "e:88",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07064119850187252,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 88,
+        "strength": 1.0,
+        "utility": 0.12064119850187323,
+        "tags": [
+          "interoception"
+        ]
+      },
+      "e:89": {
+        "mid": "e:89",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.07887777777777763,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 89,
+        "strength": 1.0,
+        "utility": 0.12887777777777834,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:90": {
+        "mid": "e:90",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.06637472527472513,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 90,
+        "strength": 1.0,
+        "utility": 0.11637472527472584,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:91": {
+        "mid": "e:91",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.06220507246376797,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 91,
+        "strength": 1.0,
+        "utility": 0.11220507246376868,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:92": {
+        "mid": "e:92",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.06011881720430093,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 92,
+        "strength": 1.0,
+        "utility": 0.11011881720430164,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:93": {
+        "mid": "e:93",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.058865957446808365,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 93,
+        "strength": 1.0,
+        "utility": 0.10886595744680908,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:94": {
+        "mid": "e:94",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.05802982456140336,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 94,
+        "strength": 1.0,
+        "utility": 0.10802982456140407,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:95": {
+        "mid": "e:95",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.05743184523809508,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 95,
+        "strength": 1.0,
+        "utility": 0.10743184523809579,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:96": {
+        "mid": "e:96",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.056982731958762745,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 96,
+        "strength": 1.0,
+        "utility": 0.10698273195876346,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:97": {
+        "mid": "e:97",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.056632879818593954,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 97,
+        "strength": 1.0,
+        "utility": 0.10663287981859466,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:98": {
+        "mid": "e:98",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.0563525252525251,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 98,
+        "strength": 1.0,
+        "utility": 0.10635252525252581,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      },
+      "e:99": {
+        "mid": "e:99",
+        "kind": "episode",
+        "content": {
+          "action": "move",
+          "target": null,
+          "message": "ok",
+          "reward": 0.056122727272727116,
+          "prediction_error": 0.05000000000000071,
+          "success": true
+        },
+        "created_at": 99,
+        "strength": 1.0,
+        "utility": 0.10612272727272783,
+        "tags": [
+          "interoception",
+          "vision"
+        ]
+      }
+    },
+    "semantic_facts": {},
+    "procedural_skills": {
+      "move": -0.09637321871536904
+    },
+    "beliefs": {},
+    "causal_edges": {},
+    "habits": {
+      "q": {
+        "((('energy', 65.0), ('hydration', 65.0), ('integrity', 100.0)), (('?', 1), ('?', 1), ('?', 2), ('?', 2), ('?', 3), ('?', 3)), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+          "move:1:0": 0.015540000000000023
+        },
+        "((('energy', 64.6), ('hydration', 64.8), ('integrity', 100.0)), (('?', 2), ('?', 2), ('?', 3), ('?', 3)), (), ())": {
+          "move:1:0": 0.010182857142857164
+        },
+        "((('energy', 64.2), ('hydration', 64.6), ('integrity', 100.0)), (('?', 3), ('?', 3)), (), ())": {
+          "move:1:0": 0.009539999999999979
+        },
+        "((('energy', 63.9), ('hydration', 64.4), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.01178999999999998
+        },
+        "((('energy', 63.5), ('hydration', 64.2), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.011539999999999979
+        },
+        "((('energy', 63.1), ('hydration', 64.0), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.011373333333333312
+        },
+        "((('energy', 62.7), ('hydration', 63.8), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.011254285714285694
+        },
+        "((('energy', 62.3), ('hydration', 63.6), ('integrity', 100.0)), (), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+          "move:1:0": 0.011164999999999979
+        },
+        "((('energy', 62.0), ('hydration', 63.4), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.011095555555555534
+        },
+        "((('energy', 61.6), ('hydration', 63.2), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.011039999999999979
+        },
+        "((('energy', 61.2), ('hydration', 63.0), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": -0.02890545454545456
+        },
+        "((('energy', 60.9), ('hydration', 62.8), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 0.010956666666666648
+        },
+        "((('energy', 60.5), ('hydration', 62.6), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": -0.028975384615384625
+        },
+        "((('energy', 60.3), ('hydration', 62.4), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 0.010897142857142838
+        },
+        "((('energy', 59.9), ('hydration', 62.2), ('integrity', 100.0)), (), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+          "move:1:0": -0.029026666666666676
+        },
+        "((('energy', 59.6), ('hydration', 62.0), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 0.010852499999999978
+        },
+        "((('energy', 59.2), ('hydration', 61.8), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": -0.02906588235294119
+        },
+        "((('energy', 58.9), ('hydration', 61.6), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 0.010817777777777756
+        },
+        "((('energy', 58.6), ('hydration', 61.4), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:1:0": -0.027912631578947376
+        },
+        "((('energy', 58.3), ('hydration', 61.2), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:0:1": 0.010102499999999978
+        },
+        "((('energy', 57.9), ('hydration', 61.0), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:1:0": -0.030431428571428585
+        },
+        "((('energy', 57.6), ('hydration', 60.8), ('integrity', 100.0)), (('?', 4),), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+          "move:0:1": 0.009147954545454523
+        },
+        "((('energy', 57.2), ('hydration', 60.6), ('integrity', 100.0)), (('?', 3),), (), ())": {
+          "move:1:0": -0.030946956521739143
+        },
+        "((('energy', 57.0), ('hydration', 60.4), ('integrity', 100.0)), (('?', 3),), (), ())": {
+          "move:0:1": 0.008821249999999977
+        },
+        "((('energy', 56.6), ('hydration', 60.2), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:1:0": -0.031174285714285727
+        },
+        "((('energy', 56.3), ('hydration', 60.0), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:0:1": 0.008652980769230748
+        },
+        "((('energy', 55.9), ('hydration', 59.8), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:1:0": -0.031304444444444454
+        },
+        "((('energy', 55.6), ('hydration', 59.6), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:0:1": 0.00854892857142855
+        },
+        "((('energy', 55.3), ('hydration', 59.4), ('integrity', 100.0)), (), (), (\"{'tone': 1, 'intensity': 0.25}\",))": {
+          "move:1:0": -0.029187586206896564
+        },
+        "((('energy', 55.0), ('hydration', 59.2), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 0.010706666666666644
+        },
+        "((('energy', 54.6), ('hydration', 59.0), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": -0.029198709677419367
+        },
+        "((('energy', 54.3), ('hydration', 58.8), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.029203750000000014
+        },
+        "((('energy', 54.0), ('hydration', 58.6), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 0.01069151515151513
+        },
+        "((('energy', 53.7), ('hydration', 58.4), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.0292129411764706
+        },
+        "((('energy', 53.4), ('hydration', 58.2), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 0.01068285714285712
+        },
+        "((('energy', 53.0), ('hydration', 58.0), ('integrity', 100.0)), (('?', 5),), (), (\"{'tone': 1, 'intensity': 0.25}\",))": {
+          "move:0:1": -0.028005833333333344
+        },
+        "((('energy', 52.7), ('hydration', 57.8), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:-1:0": 0.01001635135135133
+        },
+        "((('energy', 52.3), ('hydration', 57.6), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:0:1": -0.030511315789473695
+        },
+        "((('energy', 52.1), ('hydration', 57.4), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:-1:0": 0.009073653846153823
+        },
+        "((('energy', 51.7), ('hydration', 57.2), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:0:1": -0.031016250000000013
+        },
+        "((('energy', 51.4), ('hydration', 57.0), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:-1:0": 0.008756463414634125
+        },
+        "((('energy', 51.0), ('hydration', 56.8), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.029240952380952395
+        },
+        "((('energy', 50.7), ('hydration', 56.6), ('integrity', 100.0)), (), (), (\"{'tone': 1, 'intensity': 0.25}\",))": {
+          "move:-1:0": 0.01065627906976742
+        },
+        "((('energy', 50.4), ('hydration', 56.4), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.029246363636363647
+        },
+        "((('energy', 50.1), ('hydration', 56.2), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 0.010651111111111089
+        },
+        "((('energy', 49.7), ('hydration', 56.0), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.029251304347826097
+        },
+        "((('energy', 49.4), ('hydration', 55.8), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 0.010646382978723385
+        },
+        "((('energy', 49.0), ('hydration', 55.6), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.029255833333333345
+        },
+        "((('energy', 48.8), ('hydration', 55.4), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 0.010642040816326508
+        },
+        "((('energy', 48.4), ('hydration', 55.2), ('integrity', 100.0)), (), (), (\"{'tone': 1, 'intensity': 0.25}\",))": {
+          "move:0:1": -0.02926000000000001
+        },
+        "((('energy', 48.1), ('hydration', 55.0), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 0.010638039215686252
+        },
+        "((('energy', 47.7), ('hydration', 54.8), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.029263846153846168
+        },
+        "((('energy', 47.4), ('hydration', 54.6), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 0.010634339622641488
+        },
+        "((('energy', 47.1), ('hydration', 54.4), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.029267407407407423
+        },
+        "((('energy', 46.8), ('hydration', 54.2), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 0.01063090909090907
+        },
+        "((('energy', 46.4), ('hydration', 54.0), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.0292707142857143
+        },
+        "((('energy', 46.1), ('hydration', 53.8), ('integrity', 100.0)), (), (), (\"{'tone': 2, 'intensity': 0.25}\",))": {
+          "move:-1:0": 0.010627719298245594
+        },
+        "((('energy', 45.7), ('hydration', 53.6), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.029273793103448287
+        },
+        "((('energy', 45.5), ('hydration', 53.4), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 0.010624745762711841
+        },
+        "((('energy', 45.1), ('hydration', 53.2), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:0:1": -0.028047500000000013
+        },
+        "((('energy', 44.8), ('hydration', 53.0), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:-1:0": 0.009976475409836042
+        },
+        "((('energy', 44.4), ('hydration', 52.8), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:0:1": -0.03054951612903227
+        },
+        "((('energy', 44.1), ('hydration', 52.6), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:-1:0": 0.009037023809523786
+        },
+        "((('energy', 43.8), ('hydration', 52.4), ('integrity', 100.0)), (('?', 5),), (), (\"{'tone': 2, 'intensity': 0.25}\",))": {
+          "move:0:1": -0.03105140625000001
+        },
+        "((('energy', 43.5), ('hydration', 52.2), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:-1:0": 0.008722692307692284
+        },
+        "((('energy', 43.1), ('hydration', 52.0), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.029284242424242435
+        },
+        "((('energy', 42.8), ('hydration', 51.8), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 0.01061462686567162
+        },
+        "((('energy', 42.4), ('hydration', 51.6), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.029286470588235306
+        },
+        "((('energy', 42.2), ('hydration', 51.4), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 0.01061246376811592
+        },
+        "((('energy', 41.8), ('hydration', 51.2), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.02928857142857144
+        },
+        "((('energy', 41.5), ('hydration', 51.0), ('integrity', 100.0)), (), (), (\"{'tone': 2, 'intensity': 0.25}\",))": {
+          "move:-1:0": 0.010610422535211246
+        },
+        "((('energy', 41.1), ('hydration', 50.8), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": -0.029290555555555566
+        },
+        "((('energy', 40.8), ('hydration', 50.6), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": -0.02929150684931508
+        },
+        "((('energy', 40.6), ('hydration', 50.4), ('integrity', 100.0)), (), (), ())": {
+          "move:0:-1": 0.010607567567567547
+        },
+        "((('energy', 40.2), ('hydration', 50.2), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.010606666666666644
+        },
+        "((('energy', 39.8), ('hydration', 50.0), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.010605789473684188
+        },
+        "((('energy', 39.4), ('hydration', 49.8), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.010604935064935043
+        },
+        "((('energy', 39.0), ('hydration', 49.6), ('integrity', 100.0)), (('?', 5),), (), (\"{'tone': 3, 'intensity': 0.25}\",))": {
+          "move:1:0": 0.011838076923076903
+        },
+        "((('energy', 38.7), ('hydration', 49.4), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:1:0": 0.009962468354430357
+        },
+        "((('energy', 38.3), ('hydration', 49.2), ('integrity', 100.0)), (('?', 3),), (\"{'quality': 'earthy', 'strength': 0.25}\",), ())": {
+          "move:1:0": 0.009336874999999979
+        },
+        "((('energy', 37.9), ('hydration', 49.0), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:1:0": 0.009023796296296275
+        },
+        "((('energy', 37.5), ('hydration', 48.8), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:1:0": 0.008835731707317052
+        },
+        "((('energy', 37.1), ('hydration', 48.6), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.0106002409638554
+        },
+        "((('energy', 36.8), ('hydration', 48.4), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.010599523809523786
+        },
+        "((('energy', 36.4), ('hydration', 48.2), ('integrity', 100.0)), (), (), (\"{'tone': 3, 'intensity': 0.25}\",))": {
+          "move:1:0": 0.010598823529411742
+        },
+        "((('energy', 36.0), ('hydration', 48.0), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.0105981395348837
+        },
+        "((('energy', 35.6), ('hydration', 47.8), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.010597471264367794
+        },
+        "((('energy', 35.2), ('hydration', 47.6), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.01059681818181816
+        },
+        "((('energy', 34.9), ('hydration', 47.4), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 0.010596179775280877
+        },
+        "((('energy', 34.5), ('hydration', 47.2), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:1:0": 0.011831666666666645
+        },
+        "((('energy', 34.1), ('hydration', 47.0), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:1:0": 0.009956208791208768
+        },
+        "((('energy', 33.7), ('hydration', 46.8), ('integrity', 100.0)), (('?', 3),), (), (\"{'tone': 3, 'intensity': 0.25}\",))": {
+          "move:1:0": 0.009330760869565195
+        },
+        "((('energy', 33.3), ('hydration', 46.6), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:1:0": 0.00901782258064514
+        },
+        "((('energy', 33.0), ('hydration', 46.4), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:0:-1": 0.008829893617021254
+        },
+        "((('energy', 32.6), ('hydration', 46.2), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:-1:0": 0.008704473684210503
+        },
+        "((('energy', 32.2), ('hydration', 46.0), ('integrity', 100.0)), (('?', 3),), (), ())": {
+          "move:-1:0": 0.008614776785714262
+        },
+        "((('energy', 31.8), ('hydration', 45.8), ('integrity', 100.0)), (('?', 2),), (), ())": {
+          "move:-1:0": 0.00854740979381441
+        },
+        "((('energy', 31.4), ('hydration', 45.6), ('integrity', 100.0)), (('?', 3),), (), ())": {
+          "move:-1:0": 0.008494931972789093
+        },
+        "((('energy', 31.1), ('hydration', 45.4), ('integrity', 100.0)), (('?', 4),), (), (\"{'tone': 3, 'intensity': 0.25}\",))": {
+          "move:-1:0": 0.008452878787878764
+        },
+        "((('energy', 30.7), ('hydration', 45.2), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:-1:0": 0.008418409090909067
+        }
+      },
+      "n": {
+        "((('energy', 65.0), ('hydration', 65.0), ('integrity', 100.0)), (('?', 1), ('?', 1), ('?', 2), ('?', 2), ('?', 3), ('?', 3)), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+          "move:1:0": 1
+        },
+        "((('energy', 64.6), ('hydration', 64.8), ('integrity', 100.0)), (('?', 2), ('?', 2), ('?', 3), ('?', 3)), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 64.2), ('hydration', 64.6), ('integrity', 100.0)), (('?', 3), ('?', 3)), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 63.9), ('hydration', 64.4), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 63.5), ('hydration', 64.2), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 63.1), ('hydration', 64.0), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 62.7), ('hydration', 63.8), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 62.3), ('hydration', 63.6), ('integrity', 100.0)), (), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+          "move:1:0": 1
+        },
+        "((('energy', 62.0), ('hydration', 63.4), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 61.6), ('hydration', 63.2), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 61.2), ('hydration', 63.0), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 60.9), ('hydration', 62.8), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 60.5), ('hydration', 62.6), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 60.3), ('hydration', 62.4), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 59.9), ('hydration', 62.2), ('integrity', 100.0)), (), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+          "move:1:0": 1
+        },
+        "((('energy', 59.6), ('hydration', 62.0), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 59.2), ('hydration', 61.8), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 58.9), ('hydration', 61.6), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 58.6), ('hydration', 61.4), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 58.3), ('hydration', 61.2), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 57.9), ('hydration', 61.0), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 57.6), ('hydration', 60.8), ('integrity', 100.0)), (('?', 4),), (), (\"{'tone': 0, 'intensity': 0.25}\",))": {
+          "move:0:1": 1
+        },
+        "((('energy', 57.2), ('hydration', 60.6), ('integrity', 100.0)), (('?', 3),), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 57.0), ('hydration', 60.4), ('integrity', 100.0)), (('?', 3),), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 56.6), ('hydration', 60.2), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 56.3), ('hydration', 60.0), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 55.9), ('hydration', 59.8), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 55.6), ('hydration', 59.6), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 55.3), ('hydration', 59.4), ('integrity', 100.0)), (), (), (\"{'tone': 1, 'intensity': 0.25}\",))": {
+          "move:1:0": 1
+        },
+        "((('energy', 55.0), ('hydration', 59.2), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 54.6), ('hydration', 59.0), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 54.3), ('hydration', 58.8), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 54.0), ('hydration', 58.6), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 53.7), ('hydration', 58.4), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 53.4), ('hydration', 58.2), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 53.0), ('hydration', 58.0), ('integrity', 100.0)), (('?', 5),), (), (\"{'tone': 1, 'intensity': 0.25}\",))": {
+          "move:0:1": 1
+        },
+        "((('energy', 52.7), ('hydration', 57.8), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 52.3), ('hydration', 57.6), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 52.1), ('hydration', 57.4), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 51.7), ('hydration', 57.2), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 51.4), ('hydration', 57.0), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 51.0), ('hydration', 56.8), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 50.7), ('hydration', 56.6), ('integrity', 100.0)), (), (), (\"{'tone': 1, 'intensity': 0.25}\",))": {
+          "move:-1:0": 1
+        },
+        "((('energy', 50.4), ('hydration', 56.4), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 50.1), ('hydration', 56.2), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 49.7), ('hydration', 56.0), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 49.4), ('hydration', 55.8), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 49.0), ('hydration', 55.6), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 48.8), ('hydration', 55.4), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 48.4), ('hydration', 55.2), ('integrity', 100.0)), (), (), (\"{'tone': 1, 'intensity': 0.25}\",))": {
+          "move:0:1": 1
+        },
+        "((('energy', 48.1), ('hydration', 55.0), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 47.7), ('hydration', 54.8), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 47.4), ('hydration', 54.6), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 47.1), ('hydration', 54.4), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 46.8), ('hydration', 54.2), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 46.4), ('hydration', 54.0), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 46.1), ('hydration', 53.8), ('integrity', 100.0)), (), (), (\"{'tone': 2, 'intensity': 0.25}\",))": {
+          "move:-1:0": 1
+        },
+        "((('energy', 45.7), ('hydration', 53.6), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 45.5), ('hydration', 53.4), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 45.1), ('hydration', 53.2), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 44.8), ('hydration', 53.0), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 44.4), ('hydration', 52.8), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 44.1), ('hydration', 52.6), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 43.8), ('hydration', 52.4), ('integrity', 100.0)), (('?', 5),), (), (\"{'tone': 2, 'intensity': 0.25}\",))": {
+          "move:0:1": 1
+        },
+        "((('energy', 43.5), ('hydration', 52.2), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 43.1), ('hydration', 52.0), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 42.8), ('hydration', 51.8), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 42.4), ('hydration', 51.6), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 42.2), ('hydration', 51.4), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 41.8), ('hydration', 51.2), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 41.5), ('hydration', 51.0), ('integrity', 100.0)), (), (), (\"{'tone': 2, 'intensity': 0.25}\",))": {
+          "move:-1:0": 1
+        },
+        "((('energy', 41.1), ('hydration', 50.8), ('integrity', 100.0)), (), (), ())": {
+          "move:0:1": 1
+        },
+        "((('energy', 40.8), ('hydration', 50.6), ('integrity', 100.0)), (), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 40.6), ('hydration', 50.4), ('integrity', 100.0)), (), (), ())": {
+          "move:0:-1": 1
+        },
+        "((('energy', 40.2), ('hydration', 50.2), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 39.8), ('hydration', 50.0), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 39.4), ('hydration', 49.8), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 39.0), ('hydration', 49.6), ('integrity', 100.0)), (('?', 5),), (), (\"{'tone': 3, 'intensity': 0.25}\",))": {
+          "move:1:0": 1
+        },
+        "((('energy', 38.7), ('hydration', 49.4), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 38.3), ('hydration', 49.2), ('integrity', 100.0)), (('?', 3),), (\"{'quality': 'earthy', 'strength': 0.25}\",), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 37.9), ('hydration', 49.0), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 37.5), ('hydration', 48.8), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 37.1), ('hydration', 48.6), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 36.8), ('hydration', 48.4), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 36.4), ('hydration', 48.2), ('integrity', 100.0)), (), (), (\"{'tone': 3, 'intensity': 0.25}\",))": {
+          "move:1:0": 1
+        },
+        "((('energy', 36.0), ('hydration', 48.0), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 35.6), ('hydration', 47.8), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 35.2), ('hydration', 47.6), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 34.9), ('hydration', 47.4), ('integrity', 100.0)), (), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 34.5), ('hydration', 47.2), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 34.1), ('hydration', 47.0), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 33.7), ('hydration', 46.8), ('integrity', 100.0)), (('?', 3),), (), (\"{'tone': 3, 'intensity': 0.25}\",))": {
+          "move:1:0": 1
+        },
+        "((('energy', 33.3), ('hydration', 46.6), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:1:0": 1
+        },
+        "((('energy', 33.0), ('hydration', 46.4), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:0:-1": 1
+        },
+        "((('energy', 32.6), ('hydration', 46.2), ('integrity', 100.0)), (('?', 4),), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 32.2), ('hydration', 46.0), ('integrity', 100.0)), (('?', 3),), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 31.8), ('hydration', 45.8), ('integrity', 100.0)), (('?', 2),), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 31.4), ('hydration', 45.6), ('integrity', 100.0)), (('?', 3),), (), ())": {
+          "move:-1:0": 1
+        },
+        "((('energy', 31.1), ('hydration', 45.4), ('integrity', 100.0)), (('?', 4),), (), (\"{'tone': 3, 'intensity': 0.25}\",))": {
+          "move:-1:0": 1
+        },
+        "((('energy', 30.7), ('hydration', 45.2), ('integrity', 100.0)), (('?', 5),), (), ())": {
+          "move:-1:0": 1
+        }
+      }
+    },
+    "hierarchical_skill_macros": {},
+    "object_model": {}
+  },
+  "world_truth": {
+    "agent_pos": [
+      13,
+      18
+    ],
+    "objects": {
+      "o0": {
+        "pos": [
+          3,
+          3
+        ],
+        "color": "red",
+        "shape": "round"
+      },
+      "o1": {
+        "pos": [
+          17,
+          16
+        ],
+        "color": "blue",
+        "shape": "flat"
+      },
+      "o2": {
+        "pos": [
+          15,
+          4
+        ],
+        "color": "purple",
+        "shape": "round"
+      },
+      "o3": {
+        "pos": [
+          5,
+          16
+        ],
+        "color": "green",
+        "shape": "rough"
+      },
+      "o4": {
+        "pos": [
+          10,
+          2
+        ],
+        "color": "yellow",
+        "shape": "spiky"
+      },
+      "o5": {
+        "pos": [
+          2,
+          12
+        ],
+        "color": "cyan",
+        "shape": "flat"
+      }
+    }
+  },
+  "body": {
+    "energy": 30.299999999999805,
+    "hydration": 44.999999999999716,
+    "integrity": 100.0
+  }
+}
